@@ -2,13 +2,13 @@
     --block-background: rgba(72, 153, 25, 0.5);
     --block-border: 10px solid rgba(17, 179, 17, 0.5);
     --logo-background: rgb(214, 214, 214);
-    --block-border-radius: 20px;
+    --block-border-radius: 40px;
     --block-padding: 24px;
     --block-shadow: 0 0 100px rgb(41, 41, 41);
 }
 
 * {
-    padding: 2px 0;
+    padding: 2px 0 0 0;
     margin: 0;
 }
 
@@ -29,6 +29,7 @@ body {
     padding-bottom: 12px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -58,7 +59,7 @@ body {
 }
 
 .header > * {
-    margin: 0 20px;
+    margin: 20px;
 }
 
 .header > .nav-flex, .header > .head {
