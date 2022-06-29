@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,38 +9,54 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
     <div class="container-flex">
         <div class="header">
-            <div class="head">
+            <div class="head block">
                 <i class="fa-solid fa-list-check icon"></i>
                 <div class="title">
                     To-Do List!
                 </div>
             </div>
-                <div class="nav">
-                    <div class="nav-item">
-                        Made by elpharae
-                    </div>
-                    <div class="nav-item">
-                        <a href="https://github.com/elpharae/TodoList" target="_blank">Find this project on github</a>
-                    </div>
+            <div class="nav block">
+                <div class="nav-item">
+                    Made by elpharae
                 </div>
-            </div>
-        </div>
-        <div class="content">
-            <div class="content-left">
-                <div class="add-item">
-                    <input type="text" placeholder="Task name">
-                    <input type="date" placeholder="Due date and time">
-                    <input type="time">
-                    <textarea name="" id="" cols="20" rows="5" style="resize: none"></textarea>
+                <div class="nav-item">
+                    <a href="https://github.com/elpharae/TodoList" target="_blank">Find this project on github</a>
                 </div>
-            </div>
-            <div class="content-right">
-
             </div>
         </div>
     </div>
+    <div class="content">
+        <div class="add-task block">
+            <div class="task-form">
+                Task name
+                <input type="text">
+            </div>
+            <div class="task-form">
+                Due date
+                <input type="date">
+            </div>
+            <div class="task-form">
+                Due time
+                <input type="time">
+            </div>
+            <div class="task-form">
+                Short description
+            </div>
+            <textarea name="" id="" cols="20" rows="5" style="resize:none"></textarea>
+            <div class="task-form">
+                <input type="submit" value="Add task">
+                <input type="submit" value="Clear menu">
+            </div>
+        </div>
+        <div class="tasks block">
+            Here will be my tasks
+        </div>
+    </div>
+    </div>
 </body>
+
 </html>
