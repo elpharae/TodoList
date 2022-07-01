@@ -26,40 +26,38 @@
                 <div class="navbar-item">
                     Filter by day
                     <div class="dropdown dropdown-block">
-                        <input type="button" value="Select all">
-                        <input type="button" value="Select none">
                         <table>
                             <tr>
-                                <td><input type="checkbox" checked="checked" id="mon" name="day"></td>
+                                <td><input type="checkbox" id="mon" name="day" checked></td>
                                 <td>Monday</td>
                             </tr>
                             <tr>
-                                <td><input type="checkbox" checked="checked" id="tue" name="day"></td>
+                                <td><input type="checkbox" id="tue" name="day" checked></td>
                                 <td>Tuesday</td>
                                 
                             </tr>
                             <tr>
-                                <td><input type="checkbox" checked="checked" id="wed" name="day"></td>
-                                <td>Wednesday</td>
+                                <td><input type="checkbox" id="wed" name="day" checked></td>
+                                <td>Wednesday</td> 
                                 
                             </tr>
                             <tr>
-                                <td><input type="checkbox" checked="checked" id="thu" name="day"></td>
+                                <td><input type="checkbox" id="thu" name="day" checked></td>
                                 <td>Thursday</td>
                                 
                             </tr>
                             <tr>
-                                <td><input type="checkbox" checked="checked" id="fri" name="day"></td>
+                                <td><input type="checkbox" id="fri" name="day" checked></td>
                                 <td>Friday</td>
                                 
                             </tr>
                             <tr>
-                                <td><input type="checkbox" checked="checked" id="sat" name="day"></td>
+                                <td><input type="checkbox" id="sat" name="day" checked></td>
                                 <td>Saturday</td>
                                 
                             </tr>
                             <tr>
-                                <td><input type="checkbox" checked="checked" id="sun" name="day"></td>
+                                <td><input type="checkbox" id="sun" name="day" checked></td>
                                 <td>Sunday</td>
                             </tr>
                         </table>
@@ -70,16 +68,16 @@
                     <div class="dropdown dropdown-block">
                         <table>
                             <tr>
-                                <td><input type="radio" id="low", name="prio"></td>
-                                <td>Low</td>
+                                <td><input type="radio" checked id="high" name="prio"></td>
+                                <td>High</td>
                             </tr>
                             <tr>
                                 <td><input type="radio" id="med", name="prio"></td>
                                 <td>Medium</td>
                             </tr>
                             <tr>
-                                <td><input type="radio" checked="checked" id="high" name="prio"></td>
-                                <td>High</td>
+                                <td><input type="radio" id="low", name="prio"></td>
+                                <td>Low</td>
                             </tr>
                         </table>
                     </div>
@@ -89,12 +87,12 @@
                     <div class="dropdown dropdown-block">
                         <table>
                             <tr>
-                                <td><input type="radio" id="finished" name="fin"></td>
-                                <td>Finished</td>
+                                <td><input type="radio" id="pending" name="fin" checked></td>
+                                <td>Pending</td>
                             </tr>
                             <tr>
-                                <td><input type="radio" id="pending" checked="checked" name="fin"></td>
-                                <td>Pending</td>
+                                <td><input type="radio" id="finished" name="fin"></td>
+                                <td>Finished</td>
                             </tr>
                         </table>
                     </div>
@@ -104,7 +102,7 @@
                     <div class="dropdown dropdown-block">
                         <table>
                             <tr>
-                                <td><input type="radio" id="priority" checked="checked" name="sortby"></td>
+                                <td><input type="radio" id="priority" name="sortby" checked></td>
                                 <td>Priority</td>
                             </tr>
                             <tr>
@@ -112,7 +110,7 @@
                                 <td>Time left</td>
                             </tr>
                             <tr>
-                                <td><input type="radio" id="timeadded" checked="checked" name="sortby"></td>
+                                <td><input type="radio" id="timeadded" name="sortby"></td>
                                 <td>Time added</td>
                             </tr>
                         </table>
@@ -122,6 +120,7 @@
             </div>
         </div>
     </div>
+    <script src="./script.js"></script>
 </body>
 
 </html>
