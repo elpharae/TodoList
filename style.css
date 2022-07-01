@@ -126,7 +126,7 @@ input[type="button"]:active {
     color: white;
 }
 
-.navbar-item input[type="button"] {
+.navbar input[type="button"] {
     font-size: 1.1em;
 }
 
