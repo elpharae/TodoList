@@ -26,26 +26,100 @@
                 <div class="navbar-item">
                     Filter by day
                     <div class="dropdown dropdown-block">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, repudiandae. Ea natus esse qui provident tempora, molestias pariatur doloribus fuga cum deleniti ullam minus vel, suscipit laborum quod, corporis at.
+                        <input type="button" value="Select all">
+                        <input type="button" value="Select none">
+                        <table>
+                            <tr>
+                                <td><input type="checkbox" checked="checked" id="mon" name="day"></td>
+                                <td>Monday</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" checked="checked" id="tue" name="day"></td>
+                                <td>Tuesday</td>
+                                
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" checked="checked" id="wed" name="day"></td>
+                                <td>Wednesday</td>
+                                
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" checked="checked" id="thu" name="day"></td>
+                                <td>Thursday</td>
+                                
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" checked="checked" id="fri" name="day"></td>
+                                <td>Friday</td>
+                                
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" checked="checked" id="sat" name="day"></td>
+                                <td>Saturday</td>
+                                
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" checked="checked" id="sun" name="day"></td>
+                                <td>Sunday</td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
                 <div class="navbar-item">
                     Filter by priority
                     <div class="dropdown dropdown-block">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, repudiandae. Ea natus esse qui provident tempora, molestias pariatur doloribus fuga cum deleniti ullam minus vel, suscipit laborum quod, corporis at.
+                        <table>
+                            <tr>
+                                <td><input type="radio" id="low", name="prio"></td>
+                                <td>Low</td>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" id="med", name="prio"></td>
+                                <td>Medium</td>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" checked="checked" id="high" name="prio"></td>
+                                <td>High</td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
                 <div class="navbar-item">
-                    Sort
+                    Filter by clearance
                     <div class="dropdown dropdown-block">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, repudiandae. Ea natus esse qui provident tempora, molestias pariatur doloribus fuga cum deleniti ullam minus vel, suscipit laborum quod, corporis at.
+                        <table>
+                            <tr>
+                                <td><input type="radio" id="finished" name="fin"></td>
+                                <td>Finished</td>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" id="pending" checked="checked" name="fin"></td>
+                                <td>Pending</td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
                 <div class="navbar-item">
-                    Display
+                    Sort by
                     <div class="dropdown dropdown-block">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, repudiandae. Ea natus esse qui provident tempora, molestias pariatur doloribus fuga cum deleniti ullam minus vel, suscipit laborum quod, corporis at.
+                        <table>
+                            <tr>
+                                <td><input type="radio" id="priority" checked="checked" name="sortby"></td>
+                                <td>Priority</td>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" id="timeleft" name="sortby"></td>
+                                <td>Time left</td>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" id="timeadded" checked="checked" name="sortby"></td>
+                                <td>Time added</td>
+                            </tr>
+                        </table>
                     </div>
+                </div>
+                <div class="navbar-item">
+                    <input type="button" value="Apply settings">
                 </div>
             </div>
         </div>

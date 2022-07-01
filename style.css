@@ -5,15 +5,18 @@
 }
 
 body {
-    padding: 10px 0 0 0;
+    background-color: rgb(168, 168, 168);
 }
 
 .container {
+    background-color:rgb(255, 255, 255);
     width: 80%;
+    padding: 5px;
     display: flex;
     flex-flow: row nowrap;
     margin: 0 auto;
     justify-content: center;
+    border-radius: 10px;
 }
 
 .main-block {
@@ -47,6 +50,10 @@ body {
     justify-content: space-around;
 }
 
+.navbar-item {
+    display: inline;
+}
+
 .title {
     font-size: 4rem;
     padding: 12px;
@@ -54,7 +61,7 @@ body {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    border-bottom: 5px solid rgb(98, 98, 245);;
+    border-bottom: 5px solid rgb(98, 98, 245);
 }
 
 .title > * {
@@ -63,17 +70,18 @@ body {
 }
 
 .dropdown {
+    top: 60px;
     display: none;
     position: absolute;
 }
 
 .dropdown-block {
     padding: 20px;
-    width: 8%;
+    width: fit-content;
     color: rgb(44, 44, 44);
     font-size: 1rem;
     font-weight: 400;
-    background-color: rgb(212, 212, 212);
+    background-color: rgba(212, 212, 212, 0.7);
     border-radius: 20px;
 }
 
@@ -83,11 +91,66 @@ body {
 }
 
 .navbar-item {
+    display: flex;
+    align-items: center;
     font-weight: bold;
     font-size: 1.2rem;
 }
 
 .navbar-item:hover .dropdown {
     display: block;
-    
+}
+
+table tr td {
+    padding: 1px 5px;
+    font-weight: bold;
+}
+
+input[type="button"] {
+    margin: 0;
+    appearance: none;
+    border: none;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 3px solid rgb(98, 98, 245);
+    font-weight: bold;
+}
+
+input[type="button"]:hover {
+    background-color: rgb(164, 164, 243);
+}
+
+input[type="button"]:active {
+    background-color: rgb(98, 98, 245);
+    color: white;
+}
+
+.navbar-item input[type="button"] {
+    font-size: 1.1em;
+}
+
+td input[type="radio"] {
+    border-radius: 10px;
+}
+
+td input[type="checkbox"] {
+    border-radius: 5px;
+}
+
+td input[type="radio"], td input[type="checkbox"] {
+    width: 1.5em;
+    height: 1.5em;
+    appearance: none;
+    background-color: white;
+    border: 3px solid rgb(98, 98, 245);
+}
+
+td input[type="radio"]:hover, td input[type="checkbox"]:hover {
+    background-color: rgb(164, 164, 243);
+}
+
+td input[type="radio"]:checked, td input[type="checkbox"]:checked {
+    background-color: rgb(98, 98, 245);
+    border: none;
 }
