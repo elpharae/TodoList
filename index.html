@@ -1,6 +1,5 @@
     <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +8,6 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-
 <body>
     <div class="container">
         <div class="main-panel main-block">
@@ -18,7 +16,39 @@
                 <span>To-do List</span>
             </div>
             <div class="content-block">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat quisquam, veritatis quod cum voluptatibus deleniti doloribus veniam excepturi consequuntur. Ratione vel minus pariatur iusto ut assumenda dolorum modi repellat tempore!
+                <div class="add-task">  
+                    <div class="add-task-title">
+                        Add task
+                    </div>
+                    <div class="add-task-form">
+                        <table>
+                            <tr>
+                                <td>Task name</td>
+                                <td><input type="text" id="taskname"></td>
+                            </tr>
+                            <tr>
+                                <td>Due date</td>
+                                <td><input type="time" id="duedate"></td>
+                            </tr>
+                            <tr>
+                                <td>Due time</td>
+                                <td><input type="date" id="duetime"></td>
+                            </tr>
+                            <tr>
+                                <td>Priority</td>
+                                <td style="display:flex;justify-content:space-around;"><input type="radio" id="low" name="taskform" checked><input type="radio" id="med" name="taskform"><input type="radio" id="high" name="taskform"></td>
+                            </tr>
+                            <tr>
+                                <td>Description</td>
+                                <td><textarea id="description" cols="22" rows="5" style="resize:none;"></textarea></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="add-task-buttons">
+                        <input type="button" value="Add task" id="add">
+                        <input type="button" value="Clear" id="clear">
+                    </div>
+                </div>
             </div>
         </div>
         <div class="content-panel">
@@ -68,15 +98,15 @@
                     <div class="dropdown dropdown-block">
                         <table>
                             <tr>
-                                <td><input type="radio" checked id="high" name="prio"></td>
+                                <td><input type="checkbox" id="high" name="prio" checked></td>
                                 <td>High</td>
                             </tr>
                             <tr>
-                                <td><input type="radio" id="med", name="prio"></td>
+                                <td><input type="checkbox" id="med", name="prio" checked></td>
                                 <td>Medium</td>
                             </tr>
                             <tr>
-                                <td><input type="radio" id="low", name="prio"></td>
+                                <td><input type="checkbox" id="low", name="prio" checked></td>
                                 <td>Low</td>
                             </tr>
                         </table>
@@ -87,11 +117,11 @@
                     <div class="dropdown dropdown-block">
                         <table>
                             <tr>
-                                <td><input type="radio" id="pending" name="fin" checked></td>
+                                <td><input type="checkbox" id="pending" name="fin" checked></td>
                                 <td>Pending</td>
                             </tr>
                             <tr>
-                                <td><input type="radio" id="finished" name="fin"></td>
+                                <td><input type="checkbox" id="finished" name="fin" checked></td>
                                 <td>Finished</td>
                             </tr>
                         </table>
@@ -116,11 +146,13 @@
                         </table>
                     </div>
                 </div>
-                <input type="button" value="Apply settings">
+                <div class="navbar-buttons">
+                    <input type="button" value="Apply">
+                    <input type="button" value="Reset">
+                </div>
             </div>
         </div>
     </div>
     <script src="./script.js"></script>
 </body>
-
 </html>

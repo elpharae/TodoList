@@ -102,7 +102,7 @@ body {
 }
 
 table tr td {
-    padding: 1px 5px;
+    padding: 5px;
     font-weight: bold;
 }
 
@@ -112,7 +112,7 @@ input[type="button"] {
     border: none;
     background-color: white;
     padding: 5px 10px;
-    border-radius: 5px;
+    border-radius: 10px;
     border: 3px solid rgb(98, 98, 245);
     font-weight: bold;
 }
@@ -130,15 +130,15 @@ input[type="button"]:active {
     font-size: 1.1em;
 }
 
-td input[type="radio"] {
+input[type="radio"] {
     border-radius: 10px;
 }
 
-td input[type="checkbox"] {
+input[type="checkbox"] {
     border-radius: 5px;
 }
 
-td input[type="radio"], td input[type="checkbox"] {
+input[type="radio"], input[type="checkbox"] {
     width: 1.5em;
     height: 1.5em;
     appearance: none;
@@ -146,11 +146,72 @@ td input[type="radio"], td input[type="checkbox"] {
     border: 3px solid rgb(98, 98, 245);
 }
 
-td input[type="radio"]:hover, td input[type="checkbox"]:hover {
+input[type="radio"]:hover, input[type="checkbox"]:hover {
     background-color: rgb(164, 164, 243);
 }
 
-td input[type="radio"]:checked, td input[type="checkbox"]:checked {
+input[type="radio"]:checked, input[type="checkbox"]:checked {
     background-color: rgb(98, 98, 245);
     border: none;
+}
+
+.add-task {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add-task > * {
+    padding-bottom: 5px;
+}
+
+.add-task-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-bottom: 5px solid rgb(98, 98, 245);
+    width: fit-content;
+}
+
+.add-task-form {
+    padding: 5px;
+}
+
+.add-task-buttons {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+
+}
+
+.add-task-form input[type="radio"] {
+    opacity: 0.3;
+    border: none;
+}
+
+.add-task-form input[type="radio"]:checked {
+    opacity: 1;
+    border: 3px solid rgb(98, 98, 245);
+}
+
+.add-task-form input[type="radio"]:nth-child(1) {
+    background-color: green;
+}
+
+.add-task-form input[type="radio"]:nth-child(2) {
+    background-color: yellow;
+}
+
+.add-task-form input[type="radio"]:nth-child(3) {
+    background-color: red;
+}
+
+.add-task-form input:not([type="radio"]), .add-task-form textarea {
+    border: none;
+    width: 100%;
+    padding: 5px;
+    border: 2px solid rgb(98, 98, 245);
+    border-radius: 10px;
 }
